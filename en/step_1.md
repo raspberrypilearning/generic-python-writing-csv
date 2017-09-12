@@ -1,19 +1,32 @@
-## Introduction
+A **C**omma **S**eperated **V**alues (CSV) file is a useful way to store tabulated data. It is easy for programming languages to read, and it can easily be imported into other applications such as Spreadsheets.
 
-Add project description here. What will learners be making?
+- First you need to import the `writer` class from the `csv` module.
 
-### What you will make
+```python
+from csv import writer
+```
 
-Add something here to showcase here, for example:
+- Next you can create a new file, and specify that each line of data is going on a newline.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+```python
+import csv
+with open('some.csv', 'w', newline='') as f:
+```
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+- Then set up a writer object, to write lines to the CSV file
 
-### What you will learn
+```python
+import csv
+with open('some.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+```
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+- Then you can write a line of data. By default the data needs to be in a list.
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+```python
+import csv
+with open('some.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Here', 'is', 'some', 'data'])
+```
+
