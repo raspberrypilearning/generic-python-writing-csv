@@ -1,6 +1,6 @@
-title: Writing data to a csv with Python
+title: Writing data to a CSV file with Python
 hero_image: images/banner.png
-description: How to write list data to a csv file
+description: How to write list data to a CSV file
 original_url:
 theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 1 # possible values: 1, 2 or 3
@@ -12,5 +12,5 @@ interests:
 technologies: "python"
 site_areas:
 steps:
-  - title: Writing to a csv
+  - title: Writing to a CSV file
 
